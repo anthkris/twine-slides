@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>Twine: Strong Enough for a Game Designer, Made for You</title>
+    <meta name="description" content="Twine is an open-source tool for telling interactive, nonlinear stories. We'll discuss how LX designers can benefit from this great tool.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@anthkris</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+        <section class="">
+          <span class="background" style="background-image:url('static/images/twineLogo.svg'); background-size: 80%; background-position: left; background-repeat: no-repeat;"></span>
+          <div class="wrap">
+            <p class="text-data">Twine</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Terms of the Day</strong></h2>
+            <p class="text-intro">Anybody Know What These Mean?</p>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>Interactive Fiction</h2>
+                  <p></p>
+                </li>
+                <li>
+                  <h2>Text-Adventure Games</h2>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <figure>
+                  <img src="static/images/noun_branching.svg" alt="Branching">
+                </figure>
+              </div>
+              <!-- end column-->
+              <div class="column">
+                <h2>
+                  IF for ID
+                </h2>
+                <p class="text-intro">We can define interactive fiction/text adventure as:</p>
+                <ul class="description">
+                  <li>
+                    Branching Scenarios
+                  </li>
+                  <li>
+                    A Story that puts the Player/Learner in the Driver's Seat
+                  </li>
+                </ul>
+              </div>
+              <!-- end .column-->
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+        <section class="bg-white">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <figure><img class="aligncenter" src="static/images/zork.png" alt="Zork I"></figure>
+              </div>
+              <div class="column">
+                <h1>
+                  <svg class="fa-gamepad">
+                    <use xlink:href="#fa-gamepad"></use>
+                  </svg>
+                  Zork
+                </h1>
+                <p class="text-intro">Many strange tales have been told of the fabulous treasure, exotic creatures, and diabolical puzzles in the Great Underground Empire.</p>
+                <p>As an aspiring adventurer, you will undoubtedly want to locate these treasures and deposit them in your trophy case.</p>
+                <p><a class="button" href="http://textadventures.co.uk/games/play/5zyoqrsugeopel3ffhz_vq" target="_blank">Play Zork</a></p>
+              </div>
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="card-50">
+              <a href="https://www.youtube.com/watch?v=YCpr_QHAqks" target="_blank" title="Sheldon Playing Text Adventure Games">
+                <figure><img src="static/images/sheldon.jpg" alt="Sheldon, Big Bang Theory"></figure>
+                <blockquote>
+                  <p>&ldquo;It runs on the world's most powerful graphics chip: Imagination.&rdquo;</p>
+                  <p><cite>Sheldon Cooper</cite></p>
+                </blockquote>
+              </a>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <span class="background dark" style="background-image:url('static/images/unsplash-golden-gate.jpeg')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">STORY TIME</p>
+            <h2>That One Where I Ran Into Accessibility Issues</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="">
+          <div class="wrap aligncenter">
+            <div class="grid">
+              <div class="column">
+                <figure><img src="static/images/noun_crime_case.svg" alt="Crime Case" width="50%"></figure>
+                <h3><strong>Cases</strong></h3>
+                <!-- <p>Scaffolded cases to teach some of the math involved in forensics</p> -->
+              </div>
+              <div class="column">
+                <figure><img src="static/images/noun_crime_lab.svg" alt="Crime Lab" width="50%"></figure>
+                <h3><strong>Labs</strong></h3>
+                <!-- <p>Lab test simulations</p> -->
+              </div>
+              <div class="column">
+                <figure><img src="static/images/noun_crime_scene.svg" alt="Crime Scene" width="50%"></figure>
+                <h3><strong>Crime Scene</strong></h3>
+                <!-- <p>Interactive crime scene panorama and collect evidence in a virtual evidence log</p> -->
+              </div>
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+        <section class="">
+          <span class="background-right-bottom" style="background-image:url('static/images/noun_universal_access.svg'); background-size: 50%;"></span>
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">Accessibility means</p>
+              <h2>
+                <strong>Equally Rigorous Activities</strong>
+              </h2>
+              <p>No shortcuts here.</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top bg-black">
+          <span class="background" style="background-image:url('static/images/unsplash-keep-out.jpg')"></span>
+          <div class="wrap">
+            <p class="text-context"><strong>PROBLEM</strong></p>
+            <h2>How do I turn a crime scene investigation simulation into something that is accessible to the blind and people with motor impairments?</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="fullscreen bg-green">
+          <div class="embed dark">
+            <span class="background" style="background-image:url('static/images/zork-1-map.jpg')"></span>
+          </div>
+          <div class="wrap slide-top">
+            <p class="text-context"><strong>SOLUTION</strong></p>
+            <h2>Turn it into a Text Adventure!</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="static/images/text-adventures.png" alt="Text Adventures">
+                <figcaption>
+                  <a href="http://textadventures.co.uk/" title="Text Adventures" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    TextAdventures.co.uk
+                  </a>
+                </figcaption>
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Classic IF
+                </h2>
+                <ul class="description">
+                  <li>
+                    <strong class="text-label">Made With:</strong> Systems like Inform7, TADS, Adrift
+                  </li>
+                  <li>
+                    <strong class="text-label">Played Via:</strong> Special Interpreters
+                  </li>
+                </ul>
+                <p>
+                  Classic IF is normally built with special systems and languages.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="card-50 bg-white">
+              <figure>
+                <img src="static/images/town.png" alt="Town">
+                <figcaption>
+                  <a href="http://www.auntiepixelante.com/town/" title="Aunti Pixelante" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    Town by Anna Anthropy
+                  </a>
+                </figcaption>
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Democratized IF
+                </h2>
+                <ul class="description">
+                  <li>
+                    <strong class="text-label">Made With:</strong> Simple, User-Friendly Tools
+                  </li>
+                  <li><strong class="text-label">Played Via:</strong> The Interwebs</li>
+                </ul>
+                <p>
+                  Twine uses simple hyperlinks and a graphical UI to help you build games.
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('static/images/domovoi-mule.png')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">EXAMPLE TIME</p>
+            <h2>Twine Games Great and Small</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="static/images/404-detective.png" alt="404 Missing Page Detective Agency">
+              <figcaption>
+                <a href="https://snozbot.itch.io/404-missing-page-detective-agency" target="_blank">
+                  <svg class="fa-camera">
+                    <use xlink:href="#fa-camera"></use>
+                  </svg>
+                  404 Missing Page Detective Agency
+                </a>
+              </figcaption>
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>404 Missing Page Detective Agency</strong></h2>
+              <ul class="description">
+                <li>
+                  Serious and Silly
+                </li>
+                <li>
+                  Media-Rich
+                </li>
+                <li>
+                  Educational and Well-Made
+                </li>
+              </ul>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <div class="flex-content">
+              <h2><strong>Nick's Dilemma</strong></h2>
+              <ul class="description">
+                <li>
+                  Simply Made
+                </li>
+                <li>
+                  Built by IDs like You
+                </li>
+                <li>
+                  Larger Branching Scenario and Cases
+                </li>
+              </ul>
+            </div>
+            <!-- end .flex-content-->
+            <figure>
+              <img src="static/images/nicksDilemma.png" alt="">
+              <figcaption>
+                <a href="http://cechidtgames.uc.edu/nicksdilemma" target="_blank">
+                  <svg class="fa-camera">
+                    <use xlink:href="#fa-camera"></use>
+                  </svg>
+                  Nick's Dilemma
+                </a>
+              </figcaption>
+            </figure>
+            <!-- end figure-->
+          </div>
+        </section>
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('static/images/unsplash-twine1.jpg')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">WHY ON EARTH?</p>
+            <h2>Can't I do this with my Authoring Tool?</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Why Twine?</h3>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <span>
+                  <svg class="fa-code">
+                    <use xlink:href="#fa-code"></use>
+                  </svg>
+                </span>
+                <h2>01. Twine is Free and Open Source</h2>
+                <p>Use it as much as you want for whatever you want</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <div class="wrap size-50">
+            <ul class="flexblock plans blink">
+              <li>
+                <a href="#" title="Download for Free">
+                  <h2>Basic</h2>
+                  <div>
+                    <span class="price">Free</span>
+                    <ul>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>Free</strong> forever
+                      </li>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>Use it</strong> however you want
+                      </li>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>No </strong>Ads
+                      </li>
+                    </ul>
+                    <span class="button ghost">Select</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Use for Free">
+                  <h2>Advanced Features</h2>
+                  <div>
+                    <span class="price"><sup>$</sup>0<sup>/year</sup></span>
+                    <ul>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>Use </strong> scripting
+                      </li>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>Embed</strong> media
+                      </li>
+                      <li>
+                        <svg class="fa-check">
+                          <use xlink:href="#fa-check"></use>
+                        </svg>
+                        <strong>Unlimited</strong> projects
+                      </li>
+                    </ul>
+                    <span class="button">Select</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 bg-white">
+            <h3><strong>Why Does Open Source Matter?</strong></h3>
+            <p class="text-intro">You Own it</p>
+            <hr>
+            <p>Open source has its own pros and cons, but you can touch every part of what you create. Nothing is hidden from you.</p>
+            <p>You can also go back and change anything at any time.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-green">
+          <span class="background dark" style="background-image:url('static/images/unsplash-suitcases.jpg')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">STORY TIME</p>
+            <h2>That One Where I Helped Move a Course to a Different Platform</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Why Twine?</h3>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <span>
+                  <svg class="fa-code">
+                    <use xlink:href="#fa-code"></use>
+                  </svg>
+                </span>
+                <h2>01. Twine is Free and Open Source</h2>
+                <p>Use it as much as you want for whatever you want</p>
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-list-alt">
+                    <use xlink:href="#fa-list-alt"></use>
+                  </svg>
+                </span>
+                <h2>02. Twine is great for Rapid Prototyping</h2>
+                <p>Use it to test an idea within minutes</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="bg-green">
+          <span class="background dark" style="background-image:url('static/images/wocInTech.jpg')"></span>
+          <div class="wrap size-60">
+            <p class="text-context">STORY TIME</p>
+            <h2>That One Where I Prototyped a Branching Scenario with Clients in 20 minutes</h2>
+            <figcaption>
+              <a href="https://www.flickr.com/photos/wocintechchat/25392644623/" title="WOC in Tech" target="_blank">
+                <svg class="fa-camera">
+                  <use xlink:href="#fa-camera"></use>
+                </svg>
+                Women of Color in Tech Flickr
+              </a>
+            </figcaption>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black slide-bottom">
+          <span class="background" style="background-image:url('static/images/clientTwine.png')"></span>
+          <div class="wrap">
+            <div class="content-right" style="text-align: right;">
+              <p>
+                <svg class="large fa-eye">
+                  <use xlink:href="#fa-eye"></use>
+                </svg>
+              </p>
+              <h2>Twine is<br/>Visual</h2>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <h3>Why Twine?</h3>
+            <ul class="flexblock steps">
+              <!-- li>a? Add blink = <ul class="flexblock steps blink">-->
+              <li>
+                <span>
+                  <svg class="fa-code">
+                    <use xlink:href="#fa-code"></use>
+                  </svg>
+                </span>
+                <h2>01. Twine is Free and Open Source</h2>
+                <p>Use it as much as you want for whatever you want</p>
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-list-alt">
+                    <use xlink:href="#fa-list-alt"></use>
+                  </svg>
+                </span>
+                <h2>02. Twine is great for Rapid Prototyping</h2>
+                <p>Use it to test an idea within minutes</p>
+              </li>
+              <li>
+                <span>
+                  <svg class="fa-gamepad">
+                    <use xlink:href="#fa-gamepad"></use>
+                  </svg>
+                </span>
+                <h2>03. Twine is Simple and Powerful</h2>
+                <p>Strong enough for a game designer; Made for you</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="fullscreen bg-green">
+          <div class="embed dark">
+            <span class="background" style="background-image:url('static/images/unsplash-twine2.jpg')"></span>
+          </div>
+          <div class="wrap">
+            <div class="content-left">
+              <p class="text-subtitle">Getting Started With</p>
+              <h2>
+                <strong>Twine</strong>
+              </h2>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="fullscreen">
+          <!-- Fullscreen Video -->
+          <iframe src="http://twinery.org/2/#!/stories" frameborder="0" width="100%" height="800px"></iframe>
+          <!-- .end .embed -->
+        </section>
+          <section class="fullscreen bg-white">
+            <div class="card-50">
+              <figure>
+                <img src="static/images/city-budget-game.png" alt="City Budget Game">
+                <figcaption>
+                  <a href="http://www.knanthony.com/showcase/budget-game/BudgetStory2.html" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    City Budget Game
+                  </a>
+                </figcaption>
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2><strong>City Budget Game</strong></h2>
+                <ul class="description">
+                  <li>
+                    Serious and Silly
+                  </li>
+                  <li>
+                    xAPI Enabled
+                  </li>
+                  <li>
+                    Built by IDs like You
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+          </section>
+          <section class="fullscreen bg-black alignleft">
+           <div class="embed">
+             <video autoplay loop muted style="top: 30%;">
+                <source src="static/videos/community.mp4" type="video/mp4">
+             </video>
+            </div><!-- .end .embed -->
+            <!-- .wrap = container (width: 90%) -->
+            <div class="wrap">
+              <h2><strong>Getting Help</strong></h2>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section class="">
+            <span class="background-right-bottom" style="background-image:url('static/images/learningCurve.svg'); background-size: 50%;"></span>
+            <div class="wrap">
+              <div class="content-left">
+                <p class="text-subtitle">Twine will take a little bit of a</p>
+                <h2>
+                  <strong>Learning Curve</strong>
+                </h2>
+              </div>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+            <div class="wrap">
+              <!-- [class*="content-"] = container max-width:50% = 600px -->
+              <div class="content-center">
+                <h3>Help is on the Way</h3>
+                <ul class="flexblock specs">
+                  <li>
+                    <div>
+                      <h2>
+                        <svg class="fa-graduation-cap">
+                          <use xlink:href="#fa-graduation-cap"></use>
+                        </svg>
+                        A Basic Twine Tutorial
+                      </h2>
+                      What is this whole Twine thing?
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>
+                        <svg class="fa-youtube-play">
+                          <use xlink:href="#fa-youtube-play"></use>
+                        </svg>
+                        YouTube Tutorials
+                      </h2>
+                      Getting started, step by step.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>
+                        <svg class="fa-info-circle">
+                          <use xlink:href="#fa-info-circle"></use>
+                        </svg>
+                        The Wiki
+                      </h2>
+                      Alright, how do I do ....?
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h2>
+                        <svg class="fa-users">
+                          <use xlink:href="#fa-users"></use>
+                        </svg>
+                        Twine Q&A
+                      </h2>
+                      Somebody's got to be able to help with this!
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .content-center -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+            <div class="wrap size-50">
+              <h2>A Basic Twine Tutorial</h2>
+              <p>The simplest way to introduce yourself to Twine.</p>
+              <figure style="background: #FFF;">
+                <img class="aligncenter" src="static/images/twineTutorial.png" alt="Twine Tutorial">
+                <figcaption>
+                  <a href="http://www.auntiepixelante.com/twine/" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    What's TWINE?
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+            <div class="wrap size-50">
+              <h2>Twine 2 Guide Wiki</h2>
+              <p>A structured walk through the most common how-tos of Twine.</p>
+              <figure style="background: #FFF;">
+                <img class="aligncenter" src="static/images/twineWiki.png" alt="Twine Wiki">
+                <figcaption>
+                  <a href="http://twinery.org/wiki/twine2:guide" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    Twine Wiki
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+            <div class="wrap size-50">
+              <h2>Twine 2.0 Tutorials</h2>
+              <p>Comprehensive video tuts on doing all the cool stuff.</p>
+              <figure style="background: #FFF;">
+                <img class="aligncenter" src="static/images/twineVids.png" alt="Twine Vids">
+                <figcaption>
+                  <a href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    Twine 2.0 Tutorials
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section>
+            <div class="wrap size-50">
+              <h2>Twine Q&A Forum</h2>
+              <p>When you're pullin' yer hair out.</p>
+              <figure style="background: #FFF;">
+                <img class="aligncenter" src="static/images/twineQA.png" alt="Twine Forums">
+                <figcaption>
+                  <a href="http://twinery.org/questions/" target="_blank">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    Twine Q&A
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          <section class="fullscreen">
+            <div class="card-50">
+              <figure style="background: #d9d9d9">
+                <img src="static/images/selfPortrait.png" alt="Emoji Self Portrait">
+                <figcaption>
+                  <a href="http://knanthony.com" title="Daniel Burka">
+                    <svg class="fa-camera">
+                      <use xlink:href="#fa-camera"></use>
+                    </svg>
+                    knanthony.com
+                  </a>
+                </figcaption>
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>Get In Contact
+                </h2>
+                <ul class="description">
+                  <li>
+                    Website: <a href="http://knanthony.com" target="_blank">http://knanthony.com</a>
+                  </li>
+                  <li>
+                    Twitter: <a href="https://twitter.com/anthkris" target="_blank">https://twitter.com/anthkris</a>
+                  </li>
+                  <li>
+                    LinkedIn: <a href="https://www.linkedin.com/in/anthkris/" target="_blank">https://www.linkedin.com/in/anthkris/</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- end .card-50-->
+          </section>
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
